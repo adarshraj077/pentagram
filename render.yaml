@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: pentagram-backend
+    env: node
+    buildCommand: bun install
+    startCommand: bun run dev:backend
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: CLIENT_URL
+        sync: false
+      - key: URL
+        sync: false
+      - key: SECRET
+        sync: false
+      - key: CLOUDINARY_CLOUD_NAME
+        sync: false
+      - key: CLOUDINARY_API_KEY
+        sync: false
+      - key: CLOUDINARY_API_SECRET
+        sync: false
