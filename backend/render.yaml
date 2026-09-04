@@ -1,7 +1,7 @@
 services:
   - type: web
     name: pentagram-backend
-    env: node
+    runtime: node
     buildCommand: bun install
     startCommand: bun run dev
     envVars:
