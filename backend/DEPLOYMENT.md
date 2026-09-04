@@ -1,7 +1,8 @@
 # mern-project
 
-The frontend and backend are deployed as separate Vercel projects. Set each
-project's Root Directory to its respective folder under `apps/`.
+The frontend and backend are deployed as separate projects. Set the frontend
+project's Vercel Root Directory to `frontend/`, and the backend project's Root
+Directory to `backend/`.
 
 ## Vercel environment variables
 
@@ -21,13 +22,13 @@ Vercel Functions handle the backend HTTP API. The Socket.IO server still needs
 a persistent Node host; realtime messaging will not work when that server is
 deployed as a Vercel Function.
 
-To install dependencies:
+To install backend dependencies:
 
 ```bash
 bun install
 ```
 
-To run:
+To run the backend:
 
 ```bash
 bun run index.js

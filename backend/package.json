@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "bun --hot index.js",
+    "build": "bun build index.js --target=node --outdir=dist",
     "start": "bun index.js"
   },
   "dependencies": {

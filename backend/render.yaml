@@ -3,7 +3,7 @@ services:
     name: pentagram-backend
     env: node
     buildCommand: bun install
-    startCommand: bun run dev:backend
+    startCommand: bun run dev
     envVars:
       - key: PORT
         value: 5000
